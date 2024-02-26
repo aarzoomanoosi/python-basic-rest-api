@@ -3,7 +3,7 @@ Basic rest api codebase to perform CRUD operation and persist in json file
 
 # Setup the local python environment
 
-Install python software. The following url can be used to search and fine a python installation file
+Install python software. The following url can be used to search and find python software to instll
 Download website: `https://www.python.org/downloads/`
 
 1. Setup a git repo locally
