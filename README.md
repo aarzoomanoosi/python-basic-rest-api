@@ -7,9 +7,11 @@ Basic rest api codebase to perform CRUD operation and persist in json file
 
 The following url can be used and find python software to install
 
-### Download website: `https://www.python.org/downloads/`
- - Setup a git repo locally
-	 - Create a project folder `python-basic-rest-api`
+#### Download website: `https://www.python.org/downloads/`
+#### Download postman: `https://www.postman.com/downloads/`
+
+## Setup a git repo locally
+- Create a project folder `python-basic-rest-api`
    	 - Clone the code
      - Setup a virtual environment
    	 - Install following command to install virtual environment module from pip
@@ -30,3 +32,24 @@ The following url can be used and find python software to install
 	   	 - (venv) c:\python-basic-rest-api> `deactivate`
 	 - Run the following command to **install all required libraries** at once
 	   	 - c:\python-basic-rest-api> pip install -r requirements.txt
+
+## Api endpoints
+
+ - Home endpoint 
+	 - `GET ~/`
+ - Helloworld endpoint
+	 - `GET ~/helloworld`
+ - Search an employee record per id
+	 - `GET ~/employee/{id}`
+	 - Sample: `~/employee/101` 
+ - Get all employee records
+	 - `GET ~/employee`
+ - Create an employee record
+	 - `POST ~/employee`
+	 - Sample: Here is the payload`{"id": 107, "location": "LA Remote", "name": "robin chang", "role": "sw engineer", "title": "sw engineer"}`
+ - Update an employee record
+	 - `PUT ~/employee/{id}`
+	 - Sample: Here is the request `~/employee/107` and payload is `{"location": "CA Remote", "name": "robin chang", "role": "sw engineer", "title": "sw engineer"}`
+ - Save employee data to json file locally
+	 - `POST ~/save`
+	 - This will save all employee records into a `employee.json` file at local computer system
