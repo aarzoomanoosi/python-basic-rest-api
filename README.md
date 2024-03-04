@@ -24,14 +24,19 @@ The following url can be used and find python software to install
    	 - **Activate** virtual environment
    		 - env/Scripts/activate.bat //In CMD
    		 - env/Scripts/Activate.ps1 //In Powershel
-	   	 - c:\python-basic-rest-api> env/Scripts/activate.bat
+	   	 - > c:\python-basic-rest-api> env/Scripts/activate.bat
 	   	 - (venv) c:\python-basic-rest-api>
 	   	 - After installation all required libraries, generate a text file listing all your project dependencies by running the code below:
    	 - (venv) c:\python-basic-rest-api> pip freeze > requirements.txt
    	 - To **deactivate** your virtual environment, simply run the following code in the terminal:
-	   	 - (venv) c:\python-basic-rest-api> `deactivate`
-	 - Run the following command to **install all required libraries** at once
-	   	 - c:\python-basic-rest-api> pip install -r requirements.txt
+	   	 - > (venv) c:\python-basic-rest-api> `deactivate`
+	 - Run the following command to **install all required libraries** at once, first go to virtual environment
+		 - > c:\python-basic-rest-api> `venv/scripts/activate` and hit enter key
+		 - > (venv) c:\python-basic-rest-api> pip install -r requirements.txt
+   	 - List down all the python modules to see if virtual environment is working
+	   	 - > (venv) c:\python-basic-rest-api> pip list //it should show you all the installed python modules
+	   	 - Run the following command to generate **requirements.txt** file
+	   	 - > (venv) c:\python-basic-rest-api> `pip freeze > requirements.txt`    
 
 ## Api endpoints
 
